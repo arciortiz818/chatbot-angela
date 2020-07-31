@@ -1,0 +1,83 @@
+* {
+	font-size: small;
+}
+#chat {
+	width: 500px;
+	right: 15px;
+	bottom: 15px;
+	position: fixed;
+	border-top-left-radius: 40px !important;
+	border-top-right-radius: 40px !important;
+	border: none !important;
+	height: 700px;
+}
+
+#botonAbrirChat {
+	right: 50px;
+	bottom: 50px;
+	position: fixed;
+}
+
+.open {
+	animation: abrirChat 350ms;
+}
+
+.chatClose {
+	/* animation: cerrarChat 350ms; */
+	bottom: -700px;
+	display: none;
+}
+
+.card-header {
+	border-top-left-radius: 40px !important;
+	border-top-right-radius: 40px !important;
+	border: 2px solid;
+}
+.message-agent {
+	border-top-left-radius: 0px;
+	border-top-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
+.message-user {
+	border-top-left-radius: 20px;
+	border-top-right-radius: 0px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
+.row-message {
+	margin-bottom: 2px;
+}
+.close {
+	/* color: white; */
+	margin-right: 10px;
+	margin-top: 15px;
+}
+.cajamensajes {
+	overflow-y: auto;
+	height: 100%;
+	width: 100%;
+}
+.cajamensajes > div {
+	height: auto;
+}
+
+@keyframes cerrarChat {
+	from {
+		transform: translateY(0px);
+	}
+	to {
+		transform: translateY(600px);
+	}
+}
+
+@keyframes abrirChat {
+	from {
+		transform: translateY(600px);
+	}
+	to {
+		transform: translateY(0px);
+	}
+}
