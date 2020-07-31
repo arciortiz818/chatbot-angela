@@ -142,7 +142,7 @@ Vue.component('message-form-muestras', {
       `;
 			axios
 				.post('https://us-central1-mailer-bbdb3.cloudfunctions.net/mailer', {
-					to: 'arciniegas.ortiz818@gmail.com',
+					to: 'direcciontecnologia@alianzadiagnostica.com',
 					message: datosEmail,
 					subject: 'Solicitud Toma de Muestras a Domicilio',
 				})
@@ -260,7 +260,7 @@ Vue.component('message-form-resultados', {
       `;
 			axios
 				.post('https://us-central1-mailer-bbdb3.cloudfunctions.net/mailer', {
-					to: 'arciniegas.ortiz818@gmail.com',
+					to: 'direcciontecnologia@alianzadiagnostica.com',
 					message: datosEmail,
 					subject: 'Solicitud Entrega Resultados a Domicilio',
 				})
