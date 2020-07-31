@@ -5,8 +5,8 @@ const store = new Vuex.Store({
 		writing: false,
 		urlBot:
 			'https://account.snatchbot.me/channels/api/api/id124889/appchatbot_angela/apschatbot_angela?user_id=chatbot_angela',
-		imageAgent: '/images/angela.jpeg',
-		imageUser: '/images/1.jpg',
+		imageAgent: 'https://arciortiz818.github.io/chatbot-angela/images/angela.jpeg',
+		imageUser: 'https://arciortiz818.github.io/chatbot-angela/images/1.jpg',
 	},
 	mutations: {
 		ADD_MESSAGE_USER(state, message) {
